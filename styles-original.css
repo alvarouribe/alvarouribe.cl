@@ -1,0 +1,119 @@
+/* Webfont: FuturaStd-Book */
+@font-face {
+  font-family: "Futura W01 Book";
+  src: url("fonts/FuturaStd-Book-subset.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Futura W01 Book";
+  background-color: #272729;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 10px 150px;
+  background-image: url('images/markus-spiske-153537-unsplash-small.jpg');
+  background-size: 100% 100%;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url('images/markus-spiske-153537-unsplash-small.jpg');
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url('images/markus-spiske-153537-unsplash-medium.jpg');
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-image: url('images/markus-spiske-153537-unsplash.jpg');
+  }
+}
+
+h1 {
+  margin-top: 10%;
+}
+
+h2 {
+  text-align: right;
+  margin-top: 15%;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+a:nth-child(2) {
+  padding: 0 30px;
+}
+
+.main {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.bounce {
+  animation: bounce 4s ease infinite;
+}
+
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-10%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
