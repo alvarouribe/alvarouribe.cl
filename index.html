@@ -82,12 +82,17 @@
         margin-top: 15%;
       }
       .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         position: fixed;
         bottom: 10%;
         margin: auto;
         width: 100%;
         text-align: center;
       }
+
       img {
         width: 30px;
       }
@@ -98,6 +103,9 @@
         max-width: 800px;
         margin: auto;
         padding: 30px;
+      }
+      .pb-8 {
+        padding-bottom: 8px;
       }
     </style>    
   </head>
@@ -112,11 +120,17 @@
     </div>
 
     <div class="social-icons">
-      <a href="https://www.flyingdolly.co.nz" target="blank">
-        <img src="images/flyingDolly_isologo_white.svg" alt="FlyingDolly icon">
+      <a href="https://instagram.com/flyingdolly.co.nz" target="blank">
+        <!-- <img src="images/flyingDolly_isologo_white.svg" alt="FlyingDolly icon"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z"/>
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg>
       </a>
       <a href="https://www.linkedin.com/in/alvaro-uribe-in-auckland" target="blank">
-        <img src="images/linkedin-in.svg" alt="twitter icon">
+        <img class="pb-8" src="images/linkedin-in.svg" alt="twitter icon">
       </a>
       <a href="mailto:iam@alvaruribe.cl" target="blank">      
         <img src="images/envelope.svg" alt="twitter icon">
